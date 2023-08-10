@@ -1,0 +1,21 @@
+DEPENDENCIES
+  apt
+  smoke
+    path: test/fixtures/smoke
+  td-agent
+    path: .
+    metadata: true
+  td-agent-spec
+    path: test/fixtures/td-agent-spec
+  yum
+
+GRAPH
+  apt (7.5.14)
+  smoke (1.0.0)
+    td-agent (>= 0.0.0)
+  td-agent (3.2.4)
+    apt (>= 0.0.0)
+    yum (>= 0.0.0)
+  td-agent-spec (0.1.0)
+    td-agent (>= 0.0.0)
+  yum (7.4.13)
